@@ -945,7 +945,7 @@ function drawstuff () {
 	for (var i = 1; i<=8; i++) {
 		children += "<tr>\n";
 		for (var j = 1; j<=8; j++) {
-			children += '<td id="p'+i+'p'+j+'" ondragover="allowDrop(event)" ondrop="drop(event)" onclick="touched(event)" style="width: 50px; height: 50px;  border: 1px solid black; background-color: #'+ ((i%2)+(j%2)==1 ? '750' : 'ee9') + '"></td>\n'; // 1c6 4f9 // 750 ee9
+			children += '<td id="p'+i+'p'+j+'" ondragover="allowDrop(event)" ondrop="drop(event)" onclick="clicked(event)" style="width: 50px; height: 50px;  border: 1px solid black; background-color: #'+ ((i%2)+(j%2)==1 ? '750' : 'ee9') + '"></td>\n'; // 1c6 4f9 // 750 ee9
 		}
 		children += "</tr>\n";
 	}
