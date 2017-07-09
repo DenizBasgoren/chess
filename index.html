@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Korsan Chess</title>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css">
+  -->
+</head>
+<body style="  text-align: center;">
+
+<table style="width: 99%">
+<tr>
+<td style="width: 10%;"></td>
+<td >
+      <!--
+     <span id="cpumode">CPU</span> 
+     -->
+      <input type="textfield" id="blackname" placeholder="(Black) Enter your name:" onmouseenter="focus()" style="width: 40%; color: #f33; "> 
+      <span id="blacknamee"></span>
+</td>
+<td style="width:10%; text-align: right;" >
+<span id="langs" style="cursor: pointer;"></span>
+  <span id="help" style="cursor: pointer;"><strong>?</strong></span>
+</td>
+</tr>
+</table>
+      <table id="board" align="center" style=" border-style: solid; border-width: 10px; margin-bottom: 1%;">
+          
+      </table>
+
+      <input type="textfield" id="whitename" onmouseenter="focus()" placeholder="(White) Enter your name:" style="width: 30%; color: #f33; "> 
+      <span id="whitenamee"></span>
+
+      <br>
+      <div id="settings" style="background-color: #ddd; color:#e00; margin: 1% 20% 0px 20%;">
+      <br>
+      <input type="button" id="startgame" value="Start Game" style="color: #e00">
+      <input type="button" id="endgame" value="End Game" disabled>
+      <!-- 
+      <input type="button" id="vsplayer" value="Vs Player" style="margin-left: 2%" disabled>
+      <input type="button" id="vscomputer" value="Vs Computer" style="color: #e00" >
+      -->
+
+       <!--
+      <input type="textfield" id="getexposed" onkeyup="debug1()" placeholder="Debug::Exposed Areas" style="color: #f0f">
+      <input type="textfield" id="getvalid" onkeyup="debug2()" placeholder="Debug::Valid Areas for id" style="color: #f0f">
+      <input type="button" id="getnormal" onclick="debug3()" value="Debug::Return" style="color: #f0f">
+      -->
+      <span id="errormessage"></span>
+
+      <br>
+      <br>
+     </div>
+
+
+
+<script type="text/javascript" src="game.js"></script>
+
+</body>
+</html>
