@@ -992,7 +992,7 @@ function clicked(event) {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 document.getElementById("help").onclick = function () {
-	alert("(version 2) " + text[lang][10]);
+	alert("(version 666) " + text[lang][10]);
 }
 
 
