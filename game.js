@@ -1055,12 +1055,12 @@ function cpumodechange() {
 	if (cpumode==-1) {
 		document.getElementById("cpumode").style.fontWeight = "bold";
 		document.getElementById("cpumode").style.color = "#f00";
-		document.getElementById("blackname").disabled = true;
+		document.getElementById("blackname").style.display = "none";
 	}
 	else {
 		document.getElementById("cpumode").style.fontWeight = "normal";
 		document.getElementById("cpumode").style.color = "inherit";
-		document.getElementById("blackname").disabled = false;
+		document.getElementById("blackname").style.display = "inline";
 	}
 	cpumode*= -1;
 }
