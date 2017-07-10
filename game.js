@@ -909,6 +909,10 @@ document.getElementById("endgame").onclick = function () {
 
 	sira = 1;
 	gameOver = true;
+	whitelrock = true;
+	whiterrock = true;
+	blackrrock = true;
+	blacklrock = true;
 
 }
 
