@@ -340,7 +340,20 @@ function move(x, y, fx, fy) {
 		return;
 	}
 
-	
+	// If only two kings are left, it's a draw position
+	var emptycounter = 0;
+	for (i = 1;i<=8; i++) {
+		for (j = 1; j<=8; j++) {
+			if (board[i][j]=='b') emptycounter++;
+		}
+	}
+	if (emptycounter==62) {
+		error(text[lang][14]);
+		sounds_draw.play();
+		gameOver = true;
+		draw();
+		return;
+	}
 
 
 	
