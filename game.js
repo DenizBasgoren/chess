@@ -349,7 +349,7 @@ function move(x, y, fx, fy) {
 	draw();
 
 	// If player moved and its cpu mode, wait 500 ms, let cpu make move.
-	if (cpumode==1 && sira==-1) setTimeout(function() {cputime(); },500);
+	if (cpumode==1 && sira==-1) setTimeout(function() {cputime(); },1);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
