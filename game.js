@@ -3,7 +3,7 @@ var board = [];
 // Board is a 2d string array of 10x10 cells. Each cell has an id. Id is "pYpX" where Y and X are coordinates.
 // Each cell contains a string. p=pawn a=knight f=bishop v=queen k=rook s=king d=black w=white b=empty cell u=outside the board
 
-//	[0][0]	u  u  u  u  u  u  u  u  u  u
+//	[0][0]		u  u  u  u  u  u  u  u  u  u
 //			u  dk da df dv ds df da dk u
 //			u  dp dp dp dp dp dp dp dp u
 //			u  b  b  b  b  b  b  b  b  u
