@@ -341,20 +341,44 @@ function move(x, y, fx, fy) {
 	}
 
 	// If only two kings are left, it's a draw position
-	var emptycounter = 0;
+	var piececounter = [0,0,0,0,0,0,0]; //0=empty 1=pawn 2=knight 3=bishop 4=rook 5=queen 6=king
 	for (i = 1;i<=8; i++) {
 		for (j = 1; j<=8; j++) {
-			if (board[i][j]=='b') emptycounter++;
+			switch (board[i][j][1]) {
+				case undefined:
+				piececounter[0]++;
+				break;
+				case 'p':
+				piececounter[1]++;
+				break;
+				case 'a':
+				piececounter[2]++;
+				break;
+				case 'f':
+				piececounter[3]++;
+				break;
+				case 'k':
+				piececounter[4]++;
+				break;
+				case 'v':
+				piececounter[5]++;
+				break;
+				case 's':
+				piececounter[6]++;
+			}
 		}
 	}
-	if (emptycounter==62) {
+	switch (piececounter.join(" ")) {
+		case "62 0 0 0 0 0 2":
+		case "61 0 1 0 0 0 2":
+		case "61 0 0 1 0 0 2":
+		case "60 0 2 0 0 0 2":
 		error(text[lang][14]);
 		sounds_draw.play();
 		gameOver = true;
 		draw();
 		return;
 	}
-
 
 	
 	// Change turn and draw the updated board
