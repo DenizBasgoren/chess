@@ -11,7 +11,8 @@ var board = [];
 //			u  b  b  b  b  b  b  b  b  u
 //			u  b  b  b  b  b  b  b  b  u
 //			u  wp wp wp wp wp wp wp wp u
-//			u  wk wa wf wv ws wf wa wk u [9][9]
+//			u  wk wa wf wv ws wf wa wk u 
+//			u  u  u  u  u  u  u  u  u  u [9][9]
 
 var past = [];
 // Each time the board is updated, the previous position of pieces are copied to this array. This is needed to check if en passant move is legal or not.
